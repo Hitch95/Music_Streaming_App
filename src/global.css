@@ -1,0 +1,34 @@
+@font-face {
+  font-family: 'FranieVariableTest';
+  src: url('./assets/Font/FranieVariableTest-Black-BF64c31f3ca614b.otf'),
+    url('./assets/Font/FranieVariableTest-BlackItalic-BF64c31f3d4f65c.otf'),
+    url('./assets/Font/FranieVariableTest-Bold-BF64c31f3d8798d.otf'),
+    url('./assets/Font/FranieVariableTest-BoldItalic-BF64c31f3db96ab.otf'),
+    url('./assets/Font/FranieVariableTest-ExtraBold-BF64c31f3d93e1b.otf'),
+    url('./assets/Font/FranieVariableTest-ExtraBoldItalic-BF64c31f3dafebe.otf'),
+    url('./assets/Font/FranieVariableTest-ExtraLight-BF64c31f3ceda28.otf'),
+    url('./assets/Font/FranieVariableTest-ExtraLightItalic-BF64c31f3d91383.otf'),
+    url('./assets/Font/FranieVariableTest-Hair-BF64c31f3db8c2b.otf'),
+    url('./assets/Font/FranieVariableTest-HairItalic-BF64c31f3d96e90.otf'),
+    url('./assets/Font/FranieVariableTest-Italic-BF64c31f3d8c758.otf'),
+    url('./assets/Font/FranieVariableTest-Light-BF64c31f3dc06e0.otf'),
+    url('./assets/Font/FranieVariableTest-LightItalic-BF64c31f3db72fa.otf'),
+    url('./assets/Font/FranieVariableTest-Regular-BF64c31f3d73b64.otf'),
+    url('./assets/Font/FranieVariableTest-SemiBold-BF64c31f3d7b0b9.otf'),
+    url('./assets/Font/FranieVariableTest-SemiBoldItalic-BF64c31f3db7d6d.otf'),
+    url('./assets/Font/FranieVariableTest-SemiLight-BF64c31f3d5484a.otf'),
+    url('./assets/Font/FranieVariableTest-SemiLightItalic-BF64c31f3dae070.otf');
+}
+
+:root {
+  font-family: 'FranieVariableTest-Regular', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  height: 100%;
+  background-color: #030303;
+  color-scheme: dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

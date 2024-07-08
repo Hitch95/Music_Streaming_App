@@ -1,16 +1,15 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { CssBaseline } from '@mui/material';
 
-import Routing from './Routing';
 import './global.css';
-
-const router = createBrowserRouter([{ element: <Routing />, path: '*' }]);
+import Sidebar from './components/Sidebar';
+import Library from './components/Library';
 
 const App = () => {
   return (
     <>
-      <CssBaseline />
-      <RouterProvider router={router}></RouterProvider>
+      <Sidebar />
+      <Library />
     </>
   );
 };

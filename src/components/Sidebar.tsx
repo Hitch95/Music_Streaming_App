@@ -1,6 +1,5 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { Grid, Box, Typography } from '@mui/material';
+import { Box, Typography } from '@mui/material';
+import Grid from '@mui/material/Unstable_Grid2'; // Grid version 2
 import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
 import SearchRoundedIcon from '@mui/icons-material/SearchRounded';
 import Logo from '/logo.svg';
@@ -17,14 +16,14 @@ const Sidebar = () => {
         height: '100%',
         padding: '0.5rem',
         margin: '0.5rem',
-
         gap: '0.5rem',
         color: 'white',
-        display: { xs: 'none', lg: 'flex' },
+        display: { xs: 'none', md: 'flex', lg: 'flex' },
+        outline: '1px solid #fff',
+        borderRadius: '8px',
       }}
     >
       <Grid
-        item
         sx={{
           display: 'flex',
           alignItems: 'center',
@@ -77,7 +76,6 @@ const Sidebar = () => {
       </Grid>
 
       <Grid
-        item
         sx={{
           color: '#b3b3b3',
           width: '270px',
@@ -112,7 +110,6 @@ const Sidebar = () => {
       </Grid>
 
       <Grid
-        item
         sx={{
           color: '#b3b3b3',
           width: '270px',

@@ -24,6 +24,8 @@ const Library = () => {
               'invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%)',
           },
         },
+        outline: '1px solid #fff',
+        borderRadius: '8px',
       }}
     >
       <Grid
@@ -162,6 +164,7 @@ const Library = () => {
             '&:hover': {
               backgroundColor: 'white',
               color: '#121212',
+              scale: '1.05',
             },
           }}
         >

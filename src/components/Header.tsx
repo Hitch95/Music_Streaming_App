@@ -1,5 +1,4 @@
-import React from 'react';
-import { Box, Button } from '@mui/material';
+import { Button } from '@mui/material';
 import Grid from '@mui/material/Unstable_Grid2'; // Grid version 2
 
 import ArrowRightIcon from '/ArrowRightIcon.svg';
@@ -10,14 +9,12 @@ const Header = () => {
     <Grid
       container
       sx={{
-        margin: '0.5rem',
+        margin: '0.5rem 0.5rem 0.5rem 0',
         backgroundColor: '#121212',
-        minWidth: '482px',
-        width: '72%',
+        width: '99%',
         height: '64px',
-        position: 'fixed',
+        position: 'sticky',
         top: 0,
-        left: '302px',
         zIndex: 1,
         outline: '1px solid #fff',
         display: 'flex',

@@ -8,14 +8,13 @@ const Library = () => {
   return (
     <Box
       sx={{
-        margin: '0.5rem',
-        width: '294px',
-        height: '100%',
+        width: '100%',
+        height: '70vh',
         color: '#b3b3b3',
         backgroundColor: '#121212',
         display: 'flex',
         flexDirection: 'column',
-        justifyContent: 'center',
+        justifyContent: 'flex-start',
         alignItems: 'center',
         '&:hover': {
           color: 'white',

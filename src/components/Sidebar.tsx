@@ -12,13 +12,13 @@ const Sidebar = () => {
       sx={{
         backgroundColor: '#121212',
         fontFamily: 'FranieVariableTest-Regular, sans-serif',
-        width: '294px',
-        height: '100%',
+        width: '100%',
+        height: '180px',
         padding: '0.5rem',
-        margin: '0.5rem',
         gap: '0.5rem',
+        marginBottom: '0.5rem',
         color: 'white',
-        display: { xs: 'none', md: 'flex', lg: 'flex' },
+        display: 'flex',
         outline: '1px solid #fff',
         borderRadius: '8px',
       }}

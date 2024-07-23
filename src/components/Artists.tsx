@@ -12,20 +12,20 @@ const ArtistsCards = () => {
   const [artists, setArtists] = useState<Artist[]>([]);
   const [isLoading, setIsLoading] = useState(true);
 
-  useEffect(() => {
-    const fetchArtists = async () => {
-      try {
-        const response = await fetch(`http://localhost:3000/artists/all`);
-        setArtists(await response.json());
-        setIsLoading(false);
-      } catch (error) {
-        console.error('Erreur pendant la récupération des artistes:', error);
-        setIsLoading(false);
-      }
-    };
+  // useEffect(() => {
+  //   const fetchArtists = async () => {
+  //     try {
+  //       const response = await fetch(`http://localhost:3000/artists/all`);
+  //       setArtists(await response.json());
+  //       setIsLoading(false);
+  //     } catch (error) {
+  //       console.error('Erreur pendant la récupération des artistes:', error);
+  //       setIsLoading(false);
+  //     }
+  //   };
 
-    fetchArtists();
-  }, []);
+  //   fetchArtists();
+  // }, []);
 
   if (isLoading) {
     return <div>Loading...</div>;
@@ -82,31 +82,31 @@ const ArtistsCards = () => {
       </Box>
 
       <Grid container>
-        {artists.map((artist) => (
-          <Grid
-            key={artist.id}
+        {/* {artists.map((artist) => ( */}
+        <Grid
+          // key={artist.id}
+          sx={{
+            display: 'flex',
+            flexDirection: 'column',
+            paddingLeft: '1rem',
+            outline: '1px solid #fff',
+            width: '182px',
+            height: '236px',
+          }}
+        >
+          <Box
             sx={{
-              display: 'flex',
-              flexDirection: 'column',
-              paddingLeft: '1rem',
+              width: '160px',
+              height: '160px',
               outline: '1px solid #fff',
-              width: '182px',
-              height: '236px',
+              borderRadius: '50%',
+              backgroundColor: '#000', // Placeholder for artist image
             }}
-          >
-            <Box
-              sx={{
-                width: '160px',
-                height: '160px',
-                outline: '1px solid #fff',
-                borderRadius: '50%',
-                backgroundColor: '#000', // Placeholder for artist image
-              }}
-            ></Box>
-            <Typography>{artist.name}</Typography>
-            <Typography>Artiste</Typography>
-          </Grid>
-        ))}
+          ></Box>
+          <Typography>Nom de l'artiste</Typography>
+          <Typography>Artiste</Typography>
+        </Grid>
+        {/* ))} */}
       </Grid>
     </Box>
   );

@@ -117,6 +117,7 @@ const Header = () => {
           S'inscrire
         </Button>
         <Button
+          href="/login"
           sx={{
             backgroundColor: 'white',
             color: '#121212',
